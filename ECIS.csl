@@ -44,7 +44,7 @@
   <macro name="access">
     <choose>
       <if variable="URL">
-        <text value="Available at:" suffix=" "/>
+        <text value="URL:" suffix=" "/>
         <text variable="URL"/>
         <group prefix=" [" suffix="]">
           <text term="accessed" text-case="capitalize-first" suffix=" "/>
@@ -140,7 +140,7 @@
         <else-if type="chapter paper-conference" match="any">
           <text macro="title" prefix=" " suffix="."/>
           <group prefix=" " delimiter=" ">
-            <text term="in" text-case="capitalize-first"/>
+            <text term="in" text-case="capitalize-first" suffix=":"/>
             <text macro="editor"/>
             <text variable="container-title" font-style="italic" suffix="."/>
             <text variable="collection-title" suffix="."/>
